@@ -1,46 +1,81 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-  <head>
+  <head> 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coursework</title>
-    <style>
-      :root {
-        --paper: oklch(7 0 0);
-        --ink: color-mix(in oklab, var(--color) 5%, black);
-        --font: 100%/1.5 system-ui;
-        --space: clamp(6px, 6px + 2vw, 15px);
-        --line: 1px solid;
-      }
-      body {
-        background: var(--paper);
-        color: var(--ink);
-        font: var(--font);
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
+    <title>README, Wireframes & Git Branches</title>
+    <meta
+      name="description" 
+      content="A simple guide explaining README files, wireframes, and Git branches." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head> 
   <body>
-    <header><h1>🧐 CYF Coursework Disposable Branch Previews</h1></header>
+    <header>
+      <h1>Planning & Documenting Your Code</h1>
+      <p>
+        Learn what a README is for, why wireframes matter, and how Git branches help you work safely.
+      </p> 
+    </header>
     <main>
-      <ol>
-        <li>
-          <h2><a href="/Wireframe">Project 1: Wireframe</a></h2>
-          <p>
-            Mentors:
-            <a href="Wireframe/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-        <li>
-          <h2><a href="/Form-Controls">Project 2: Form Controls</a></h2>
-          <p>
-            Mentors:
-            <a href="Form-Controls/readme.md">open the assignment in a tab</a>
-          </p>
-        </li>
-      </ol>
-    </main>
-    <footer><a href="HOW_TO_REVIEW.md">HOW TO REVIEW MD</a></footer>
-  </body>
+      <article>
+        <img
+          src="https://via.placeholder.com/1280x400?text=README+Files" alt="Abstract illustration representing documentation" />
+        <h2>What is the purpose of a README file?</h2> 
+        <p>
+          A README file is the first place someone looks to understand your project. It explains what the project does, how to install and run it, and any important details a user or contributor needs to know. 
+        </p>
+        <p> 
+          A clear README saves time, reduces confusion, and makes your work more welcoming to others. 
+        </p>
+        <a
+          href="https://www.makeareadme.com/" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          > 
+          Learn more about writing READMEs
+        </a>
+      </article>
+      <article> 
+        <img 
+          src="https://via.placeholder.com/640x300?text=Wireframes" alt="Simple wireframe sketch of a webpage layout"
+          />
+          <h2>What is the purpose of a wireframe?</h2> 
+        <p> 
+          A wireframe is a simple visual plan of a webpage or app. It focuses on layout, structure, and content placement rather than colours or final design details.
+        </p>
+        <p> 
+          Wireframes help you think about user experience early, spot problems before you code, and communicate ideas clearly with others.
+        </p> 
+        <a
+          href="https://www.productplan.com/glossary/wireframe/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          > 
+          Read more about wireframes
+        </a>
+      </article> 
+      <article>
+        <img 
+          src="https://via.placeholder.com/640x300?text=Git+Branches" alt="Diagram showing branches in a version control system" 
+          />
+        <h2>What is a branch in Git?</h2> 
+        <p>
+          A branch in Git is a separate line of development. It lets you work on new features or fixes without changing the main codebase until you are ready.
+        </p> 
+        <p>
+          By using branches, you can experiment safely, review changes, and then merge them back into the main branch when they are tested and stable. 
+        </p>
+        <a   
+          href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+          target="_blank"
+          rel="noopener noreferrer" 
+          > 
+          Learn more about Git branches 
+        </a>
+      </article> 
+    </main> 
+    <footer>
+      <p> Built with semantic HTML, CSS grid, and Git version control.</p>
+    </footer> 
+  </body> 
 </html>
