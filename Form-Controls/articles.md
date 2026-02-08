@@ -1,6 +1,40 @@
-What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
-What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
-What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
-black
-What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
-All fields are required. Do not write a form
+<form method="post">  
+  <!-- Customer Name -->
+  <label for="customer-name">Customer Name</label>
+  <input
+    type="text" 
+    id="customer-name"
+    name="customer_name"
+    required
+    pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]{2,}" 
+    title="Please enter a valid name using letters, spaces, hyphens, or apostrophes."
+    /> 
+  <!-- Customer Email -->
+  <label for="customer-email">Email Address</label>
+  <input
+    type="email" 
+    id="customer-email" 
+    name="customer_email" 
+    required
+    />
+    <!-- T‑Shirt Colour -->
+  <label for="tshirt-colour">T‑Shirt Colour</label>
+  <select id="tshirt-colour" name="tshirt_colour" required>
+    <option value="">Select a colour</option> 
+    <option value="black">Black</option>
+    <option value="white">White</option>
+    <option value="blue">Blue</option> 
+  </select>
+  <!-- T‑Shirt Size -->
+  <label for="tshirt-size">T‑Shirt Size</label> 
+  <select id="tshirt-size" name="tshirt_size" required>
+    <option value="">Select a size</option> 
+    <option value="XS">XS</option> 
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option> 
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option> 
+    </select> 
+    <button type="submit">Submit</button> 
+    </form>
